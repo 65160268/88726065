@@ -1,0 +1,153 @@
+html{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-page-body {
+  flex: 1;
+  padding: 2rem;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color:rgb(185, 179, 175);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+
+.body-order {
+  background-color: #008080;
+
+}
+
+h2 {
+   text-align: center;
+ }
+
+ p {
+   text-align: center;
+ }
+
+ .tableheader {
+  background-color: #008080;
+ }
+
+ .mainheader {
+  background-color: #1B4242;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+ .mainbody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: rgb(185, 179, 175);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+ }
+
+ .date-time-color {
+    background-color: #515151;
+
+ }
+
+ .test-table-color {
+  background-color: #008080;
+ }
+
+ .type-table-color {
+    color: #0000FF;
+ }
+
+ h3 {
+  color: #FFF;
+}
+
+ .study-time-color {
+    background-color:#C0D0FF ;
+ }
+
+.mainfooter {
+  background-color: #1B4242;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+  table {
+  border-collapse: collapse;
+  font-weight: normal;
+ }
+
+ table, th, td {
+   border: 1px solid white;
+   text-align: center;
+   height: 50px ;
+   width: 1300px ;
+ } 
+
+ .timetableheader-color {
+  background-color: #8B8989;
+}
+
+ .body1 {
+  background-color:#C0D0FF;
+
+ }
+
+ header {
+   background-color: #333333;
+   color: white;
+   text-align: center;
+   padding: 1rem;
+ }
+
+ main {
+   flex: 0;
+   padding: 2rem;
+ }
+
+ section {
+   background-color: white;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   padding: 1rem;
+   margin-bottom: 5rem;
+ }
+
+ .img-container {
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: vh; /* Adjust the height as needed */
+ }
+
+ img {
+   border-radius: 8px;
+   width: 25%;
+   height: auto;
+   object-fit: cover;
+ }
+
+ .highlight {
+      background-color: white;
+ }
+
+ button {
+  justify-content: center;
+ }
+
+
+ 
