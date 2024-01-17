@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         todos.splice(index, 1);
         renderTodoList();
     }
+    // 
     // เพิ่ม toggleComplete
     function toggleComplete(index) {
         todos[index].completed = !todos[index].completed;
