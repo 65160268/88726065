@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "HTML",
+    "price": "50",
+    "author1": "GG1",
+    "author2": "GG2",
+    "author3": "GG3"
+  },
+  {
+    "id": 2,
+    "name": "CSS",
+    "price": "100",
+    "author1": "EZ1",
+    "author2": "EZ2",
+    "author3": "EZ3"
+  },
+  {
+    "id": 3,
+    "name": "JavaScript",
+    "price": "150",
+    "author1": "PZ1",
+    "author2": "PZ2",
+    "author3": "PZ3"
+  }
+]
