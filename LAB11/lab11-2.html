@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vue.js - Form input binding</title>
+  <script src="https://unpkg.com/vue@3.4.21/dist/vue.global.js"></script>
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Form Validation Demo</h1>
+  <div id="app">
+    <form @submit.prevent="checkForm">
+      <p v-if="errors.length">
+        <b>Please correct the following error(s):</b>
+        <ul>
+          <li v-for="error in errors" class="error">{{ error }}</li>
+        </ul>
+      </p>
+      <p>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" v-model="name">
+      </p>
+      <p>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" v-model="age" min="0">
+      </p>
+      <p>
+        <label for="gender"></label>
+        <input type="radio" name="gender" id="male" value="male" v-model="gender"> Male
+        <input type="radio" name="gender" id="female" value="female" v-model="gender"> Female
+      </p>
+      <p>
+        <label for="movie">Your favorite Movie</label>
+        <select name="movie" id="movie" v-model="movie">
+          <option disabled value="">Please select a movie</option>
+          <option>Star Wars</option>
+          <option>Vanilla Sky</option>
+          <option>Atomic Blonde</option>
+        </select>
+      </p>
+      <p>
+        <input type="submit" value="Submit">
+      </p>
+    </form>
+  </div>
+  <script>
+    const app = Vue.createApp({
+      data() {
+        return {
+          errors: [],
+          name: null,
+          age: null,
+          gender: null,
+          movie: null
+        }
+      },
+      methods: {
+        checkForm(e) {
+          this.errors = [];
+          if (!this.name) this.errors.push("Name is required.");
+          if (!this.age) this.errors.push("Age is required.");
+          if (!this.gender) this.errors.push("Gender is required.");
+          if (!this.movie) this.errors.push("Favorite Movie is required.");
+
+          if (this.errors.length > 0) {
+            e.preventDefault(); // prevent form submission if there are errors
+          }
+        }
+      }
+    }).mount('#app');
+  </script>
+</body>
+</html>
